@@ -72,7 +72,9 @@ class RetailTools(ToolKitBase):  # Tools
         Raises:
             ValueError: If the product is not found.
         """
-        x
+        if product_id not in self.db.products:
+            raise ValueError("Product not found")
+        return self.db.products[product_id]
 
     def _get_item(self, item_id: str) -> Variant:
         """Get the item from the database.

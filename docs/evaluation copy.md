@@ -1,3 +1,10 @@
+evaluation_criteria.actions 是一条参考动作轨迹，展示如何完成任务和生成目标数据库终态，并不是唯一正确路径，不作为reward_basis决定reward
+
+reward_basis才决定最终reward
+
+
+
+
 # 任务模式与评估
 本文档讲解 τ‑bench 中任务的打分机制，最重要的是说明 **`evaluation_criteria.actions` 的实际作用**。如果你看过 `data/tau2/domains/airline/tasks.json`，并且以为文件里列出的动作是智能体必须执行的，那么本文档正是为你准备的。
 
