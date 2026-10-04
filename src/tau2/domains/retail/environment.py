@@ -1,4 +1,6 @@
 # Copyright Sierra
+""" 这段代码只负责环境和任务数据的装配：
+环境由数据库、工具和政策组成；任务由任务文件加载，并可按划分筛选。"""
 from pathlib import Path
 from typing import Optional
 

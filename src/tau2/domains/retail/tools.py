@@ -1,4 +1,6 @@
-"""Toolkit for the retail domain."""
+"""Toolkit for the retail domain.
+工具有哪些、输入输出是什么
+"""
 
 import json
 from typing import List
@@ -70,9 +72,7 @@ class RetailTools(ToolKitBase):  # Tools
         Raises:
             ValueError: If the product is not found.
         """
-        if product_id not in self.db.products:
-            raise ValueError("Product not found")
-        return self.db.products[product_id]
+        x
 
     def _get_item(self, item_id: str) -> Variant:
         """Get the item from the database.
